@@ -34,7 +34,7 @@ This web application allows users to answer a series of questions organized by a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/dhivyasoundar/Questionnaire.git
+git clone https://github.com/dhivyasoundar/QAApp.git
 ```
 
 2. Open the project in your preferred development environment. (Recommended VisualStudio 2019/2022 for .NET Core 8 support)
