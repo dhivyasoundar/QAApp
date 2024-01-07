@@ -67,4 +67,42 @@ A text area is provided for users to input their answers. The answer box has a f
 
 The application integrates with a server-side model for handling answers. User responses are stored in memory and sent to the model via the controller. The model is designed in `QuestionModel`.
 
-```
+Here is the screenshots of the Questionnaire Web App:
+
+UI of the Questionnaire Web App:
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/07cc90e5-7749-45e2-ad37-31cee8b4e3ed)
+
+Click next button to move to next question: (it will also save the answer)
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/9b7dafa7-f31b-4f1b-874f-71b1321cb189)
+
+Click previous button to move to previous questions: (it will also save the answer)
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/8c2bfa51-0d71-4508-a0f1-f646dbe67358)
+
+After completing all the questions in particular subsection, it will automatically move to the next subsection:
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/b615d460-9570-4f46-923c-312f81b3504b)
+
+After completing all the subsection, it will automatically move to the next section:
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/4fb1a2f1-3ef3-4aa0-b917-307d8eeb92ea)
+
+After completing all the section, it will automatically move to the next area:
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/d564a1d6-1c79-4f8e-91ab-fb2325a84aee)
+
+After answering all the questions, it shows all questions finished:
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/b3eafdec-e0c0-472a-ab81-36dd840b7954)
+
+Atlast it will show reload button: (reload button helps to reload the page and start from first)
+
+![image](https://github.com/dhivyasoundar/QAApp/assets/39046735/20f91c80-5e4c-491b-9d07-cc1dcf0c3980)
+
+
+
+
+
+
