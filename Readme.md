@@ -68,6 +68,3 @@ A text area is provided for users to input their answers. The answer box has a f
 The application integrates with a server-side model for handling answers. User responses are stored in memory and sent to the model via the controller. The model is designed in `QuestionModel`.
 
 ```
-
-Customize the sections as needed, add any specific instructions, and update the placeholders with your project details.
-
