@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Dropdowns</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Questionnaire</h1>
+
+        <div>
+            <label for="areaDropdown">Select Area:</label>
+            <select id="areaDropdown" onchange="loadSections()">
+                <option value="">Select Area</option>
+                @foreach (var area in ViewBag.Areas)
+                {
+                    <option value="@area.Name">@area.Name</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label for="sectionDropdown">Select Section:</label>
+            <select id="sectionDropdown" onchange="loadSubsections()">
+                <option value="">Select Section</option>
+              
+            </select>
+        </div>
+
+        <div>
+            <label for="subsectionDropdown">Select Subsection:</label>
+            <select id="subsectionDropdown" onchange="loadQuestions()">
+                <option value="">Select Subsection</option>
+               
+            </select>
+        </div>
+
+        <div id="questionContainer">
+            <label for="questionLabel">Question:</label>
+            <p id="questionLabel"></p>
+            <p id="questionNumberLabel"></p>
+            <div id="answerContainer">
+                <label for="answerTextBox">Answer:</label>
+                <textarea id="answerTextBox" rows="4" cols="50"></textarea>
+            </div>
+
+        </div>
+
+        <div id="buttonContainer">
+            <button id="prevButton" onclick="previousQuestion()">Previous</button>
+            <button id="nextButton" onclick="nextQuestion()">Next</button>
+            <button id="reloadButton" onclick="reloadQuestionnaire()" style="display: none;">Reload</button>
+        </div>
+
+    </div>
+    <script src="~/js/script.js"></script>
+
+</body>
+</html>
